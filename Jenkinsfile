@@ -12,6 +12,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building project...'
+                javac index.java
+                java index.java
             }
         }
 
