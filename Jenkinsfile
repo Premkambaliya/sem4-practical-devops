@@ -12,9 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building project...'
-                bat 'ren index.java CrudOperation.java || echo File rename skipped'
-                bat 'javac CrudOperation.java'
-                bat 'java CrudOperation'
+                bat 'java index.java'
             }
         }
 
